@@ -1,2 +1,22 @@
 title: "Yumi Heo | Data Scientist"
-theme: minima 
+author: Yumi Heo
+email: yumi.heo.01@gmail.com
+description: >-
+  Data scientist in London building and deploying forecasting and
+  classification models on real-world public health data.
+theme: minima
+
+header_pages:
+  - cv.md
+  - projects.md
+
+github_username: yumi-h-1
+
+minima:
+  social_links:
+    github: yumi-h-1
+    linkedin: yumi-h
+
+exclude:
+  - .DS_Store
+  - README.md
