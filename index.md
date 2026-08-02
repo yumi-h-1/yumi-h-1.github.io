@@ -1,8 +1,3 @@
----
-layout: home
-title: Home
----
-
 # Hello there
 
 I'm Yumi, a data scientist in London working on medical images and signal processing in healthcare. I build and deploy forecasting and classification models on real-world public health data.
