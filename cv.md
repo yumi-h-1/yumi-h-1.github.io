@@ -17,9 +17,8 @@ I build and deploy forecasting and classification models on real-world public he
 
 ## Skills
 
-| | |
 |---|---|
-| **Languages & Tools** | Python, SQL (PostgreSQL), Git, Docker, FastAPI, Jira, Confluence |
+| **Languages & Tools** | Python, SQL (PostgreSQL), R, Matlab, Git, Docker, FastAPI, Jira, Confluence |
 | **ML & CV** | PyTorch, TensorFlow/Keras, OpenCV, Scikit-learn, Pandas, NumPy |
 | **LLM & Agentic AI** | HuggingFace, LangChain, LangGraph, MCP |
 | **Visualisation** | Matplotlib, Seaborn, Plotly, Tableau, Folium |
