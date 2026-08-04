@@ -24,6 +24,7 @@ I build and deploy forecasting and classification models on real-world public he
 | **LLM & Agentic AI** | HuggingFace, LangChain, LangGraph, MCP |
 | **Visualisation** | Matplotlib, Seaborn, Plotly, Tableau, Folium |
 | **Cloud & Big Data** | AWS (RDS, EC2, S3), GCP (BigQuery, Compute Engine, Cloud Run, Cloud Storage), PySpark |
+| | |
 
 ---
 
