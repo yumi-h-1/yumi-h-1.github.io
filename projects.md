@@ -25,11 +25,3 @@ Developed a prototype for an inventory placement optimiser using demand forecast
 Built an automated Python pipeline using GPT-4o mini to extract and summarise unstructured data from the European Medicines Agency, significantly improving data collection efficiency.
 
 *LLM · Web scraping · RAG*
-
----
-
-### [Detecting Face Mask Usage in Images and a Video](https://github.com/yumi-h-1/Detecting-Face-Mask-Usage-in-Images-and-a-Video)
-
-Developed multiclass classifiers for detecting face mask, no mask, and improper mask use in images and video using SVM, MLPs, and ResNet34.
-
-*Computer vision · PyTorch · OpenCV*

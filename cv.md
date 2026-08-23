@@ -6,7 +6,7 @@ permalink: /cv/
 
 **Data Scientist** — London, UK
 
-I build and deploy forecasting and classification models on real-world public health data to drive decisions in digital healthcare.
+I build efficient, explainable models tailored to clients' requirements and successfully deploy them into production.
 
 <a href="{{ '/assets/Yumi_Heo_CV.pdf' | relative_url }}">Download CV (PDF)</a> ·
 [Email](mailto:yumi.heo.01@gmail.com) ·
@@ -20,7 +20,7 @@ I build and deploy forecasting and classification models on real-world public he
 |||
 |---|---|
 | **Languages & Tools** | Python, SQL (PostgreSQL), R, Matlab, Git, Docker, FastAPI, Jira, Confluence |
-| **ML & CV** | PyTorch, TensorFlow/Keras, OpenCV, Scikit-learn, Pandas, NumPy |
+| **ML & CV** | PyTorch, TensorFlow/Keras, OpenCV, Torchvision, Pillow, ONNX, Scikit-learn, Pandas, NumPy |
 | **LLM & Agentic AI** | HuggingFace, LangChain, LangGraph, MCP |
 | **Visualisation** | Matplotlib, Seaborn, Plotly, Tableau, Folium |
 | **Cloud & Big Data** | AWS (RDS, EC2, S3), GCP (BigQuery, Compute Engine, Cloud Run, Cloud Storage), PySpark |
