@@ -2,11 +2,11 @@
 layout: default
 ---
 
-# Hello there
+# Hi there 👋
 
-I'm Yumi, a data scientist in London working on medical images and signal processing in healthcare. I build and deploy forecasting and classification models on real-world public health data.
+I'm Yumi, a Data Scientist currently based in London. I specialise in medical image analysis and biosignal processing with a focus on applications in the life sciences, healthcare, and clinical sectors.
 
-Currently at **AITIS**, developing skin cancer and wound classification models with doctors and dermatologists. Previously at the **Office of Health Economics**, and before that in film distribution in Seoul.
+My interests, however, extend beyond healthcare. I enjoy applying LLMs, computer vision, or statistical modelling to solve real-world problems, improve processes, and build automation tools for a wide range of businesses and applications.
 
 [CV]({{ '/cv/' | relative_url }}) ·
 [Projects]({{ '/projects/' | relative_url }}) ·
