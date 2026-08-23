@@ -1,21 +1,22 @@
-# title: "Yumi Heo | Data Scientist"
-# author: Yumi Heo
+# Site identity
+name: "yumi.h"
+nav_logo: "yumi.h"
+author: Yumi Heo
+role: "Data Scientist"
 email: yumi.heo.01@gmail.com
+location: "London, UK"
 description: >-
- Data Scientist currently based in London
-theme: minima
-
-header_pages:
-  - cv.md
-  - projects.md
+  Data Scientist based in London, specialising in medical image analysis
+  and biosignal processing for healthcare and the life sciences.
 
 github_username: yumi-h-1
+linkedin_username: yumi-h
 
-minima:
-  social_links:
-    github: yumi-h-1
-    linkedin: yumi-h
+# Build
+plugins:
+  - jekyll-seo-tag
 
 exclude:
   - .DS_Store
   - README.md
+  - "*.docx"

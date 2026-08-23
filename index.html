@@ -1,0 +1,420 @@
+---
+layout: default
+---
+
+<!--==================== HOME ====================-->
+<section class="home section" id="home">
+  <div class="home__container container grid">
+    <div class="home__content grid">
+      <div class="home__social">
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/" class="home__social-icon" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.02 8h4.96V24H.02V8zM8.98 8h4.75v2.2h.07c.66-1.25 2.27-2.57 4.67-2.57 5 0 5.92 3.29 5.92 7.57V24h-4.96v-7.63c0-1.82-.03-4.17-2.54-4.17-2.54 0-2.93 1.98-2.93 4.03V24H8.98V8z"/></svg>
+        </a>
+        <a href="https://github.com/{{ site.github_username }}" class="home__social-icon" aria-label="GitHub" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.6.2-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+        </a>
+        <a href="mailto:{{ site.email }}" class="home__social-icon" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg>
+        </a>
+      </div>
+
+      <div class="home__data">
+        <h1 class="home__title">Hi, I'm Yumi 👋</h1>
+        <h3 class="home__subtitle">Data Scientist · London</h3>
+        <p class="home__description">
+          I specialise in medical image analysis and biosignal processing, with a focus on
+          applications in the life sciences, healthcare, and clinical sectors. I build and
+          deploy classification and forecasting models that clinicians actually use.
+        </p>
+        <div class="home__buttons">
+          <a href="#contact" class="button button--flex">
+            Contact me
+            <svg class="button__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4 20-7z"/></svg>
+          </a>
+          <a href="#projects" class="button button--flex button--ghost">View projects</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="home__scroll">
+      <a href="#about" class="home__scroll-button button--flex">
+        <span class="home__scroll-name">Scroll down</span>
+        <svg class="home__scroll-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!--==================== ABOUT ====================-->
+<section class="about section" id="about">
+  <h2 class="section__title">About Me</h2>
+  <span class="section__subtitle">My introduction</span>
+
+  <div class="about__container container">
+    <div>
+      <p class="about__description">
+        I'm a Data Scientist at AITIS, where I develop classification and forecasting models
+        for clinical technology and health-monitoring wearables, working directly with doctors
+        and dermatologists. Before that I automated pharmaceutical regulatory data collection
+        at the Office of Health Economics, and spent three years in film distribution in Seoul
+        building forecasting models for commercial decisions.
+      </p>
+      <p class="about__description">
+        My interests extend beyond healthcare — I enjoy applying LLMs, computer vision, and
+        statistical modelling to real-world problems, improving processes and building
+        automation tools across a wide range of businesses.
+      </p>
+
+      <div class="about__info">
+        <div>
+          <span class="about__info-title">MSc</span>
+          <span class="about__info-name">Data Science<br>Distinction</span>
+        </div>
+        <div>
+          <span class="about__info-title">3</span>
+          <span class="about__info-name">Organisations<br>worked</span>
+        </div>
+        <div>
+          <span class="about__info-title">4</span>
+          <span class="about__info-name">Featured<br>projects</span>
+        </div>
+      </div>
+
+      <div class="about__buttons">
+        <a download href="{{ '/assets/Yumi_Heo_CV.pdf' | relative_url }}" class="button button--flex">
+          Download CV
+          <svg class="button__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--==================== SKILLS ====================-->
+<section class="skills section" id="skills">
+  <h2 class="section__title">Skills</h2>
+  <span class="section__subtitle">What I work with</span>
+
+  <div class="skills__container container grid">
+    <div>
+      <div class="skills__content skills__open">
+        <button class="skills__header" aria-expanded="true">
+          <svg class="skills__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6 3 12l5 6M16 6l5 6-5 6"/></svg>
+          <div>
+            <h3 class="skills__title">Languages &amp; Tools</h3>
+            <span class="skills__subtitle">Day-to-day stack</span>
+          </div>
+          <svg class="skills__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="skills__list">
+          <span class="skills__chip">Python</span>
+          <span class="skills__chip">SQL (PostgreSQL)</span>
+          <span class="skills__chip">R</span>
+          <span class="skills__chip">Matlab</span>
+          <span class="skills__chip">Git</span>
+          <span class="skills__chip">Docker</span>
+          <span class="skills__chip">FastAPI</span>
+          <span class="skills__chip">Jira</span>
+          <span class="skills__chip">Confluence</span>
+        </div>
+      </div>
+
+      <div class="skills__content skills__close">
+        <button class="skills__header" aria-expanded="false">
+          <svg class="skills__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/></svg>
+          <div>
+            <h3 class="skills__title">Machine Learning &amp; Computer Vision</h3>
+            <span class="skills__subtitle">Modelling</span>
+          </div>
+          <svg class="skills__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="skills__list">
+          <span class="skills__chip">PyTorch</span>
+          <span class="skills__chip">TensorFlow / Keras</span>
+          <span class="skills__chip">OpenCV</span>
+          <span class="skills__chip">Scikit-learn</span>
+          <span class="skills__chip">Pandas</span>
+          <span class="skills__chip">NumPy</span>
+        </div>
+      </div>
+
+      <div class="skills__content skills__close">
+        <button class="skills__header" aria-expanded="false">
+          <svg class="skills__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a4 4 0 0 1 4 4v1a4 4 0 0 1 0 8v1a4 4 0 0 1-8 0v-1a4 4 0 0 1 0-8V7a4 4 0 0 1 4-4z"/></svg>
+          <div>
+            <h3 class="skills__title">LLM &amp; Agentic AI</h3>
+            <span class="skills__subtitle">Language systems</span>
+          </div>
+          <svg class="skills__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="skills__list">
+          <span class="skills__chip">HuggingFace</span>
+          <span class="skills__chip">LangChain</span>
+          <span class="skills__chip">LangGraph</span>
+          <span class="skills__chip">MCP</span>
+        </div>
+      </div>
+
+      <div class="skills__content skills__close">
+        <button class="skills__header" aria-expanded="false">
+          <svg class="skills__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg>
+          <div>
+            <h3 class="skills__title">Visualisation</h3>
+            <span class="skills__subtitle">Communicating results</span>
+          </div>
+          <svg class="skills__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="skills__list">
+          <span class="skills__chip">Matplotlib</span>
+          <span class="skills__chip">Seaborn</span>
+          <span class="skills__chip">Plotly</span>
+          <span class="skills__chip">Tableau</span>
+          <span class="skills__chip">Folium</span>
+        </div>
+      </div>
+
+      <div class="skills__content skills__close">
+        <button class="skills__header" aria-expanded="false">
+          <svg class="skills__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.3A5 5 0 0 0 7 9a4 4 0 0 0 .5 8H18a3.5 3.5 0 0 0 0-7z"/></svg>
+          <div>
+            <h3 class="skills__title">Cloud &amp; Big Data</h3>
+            <span class="skills__subtitle">Deployment &amp; scale</span>
+          </div>
+          <svg class="skills__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="skills__list">
+          <span class="skills__chip">AWS (RDS, EC2, S3)</span>
+          <span class="skills__chip">GCP (BigQuery, Compute Engine)</span>
+          <span class="skills__chip">Cloud Run</span>
+          <span class="skills__chip">Cloud Storage</span>
+          <span class="skills__chip">PySpark</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--==================== QUALIFICATION ====================-->
+<section class="qualification section" id="qualification">
+  <h2 class="section__title">Qualification</h2>
+  <span class="section__subtitle">My journey</span>
+
+  <div class="qualification__container container">
+    <div class="qualification__tabs">
+      <button class="qualification__button button--flex qualification__active" data-target="#work" aria-selected="true">
+        <svg class="qualification__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18v13H3z"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+        Experience
+      </button>
+      <button class="qualification__button button--flex" data-target="#education" aria-selected="false">
+        <svg class="qualification__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 9 12 4 2 9l10 5 10-5z"/><path d="M6 11.5V17c0 1.7 2.7 3 6 3s6-1.3 6-3v-5.5"/></svg>
+        Education
+      </button>
+    </div>
+
+    <div class="qualification__sections">
+      <!--==================== EXPERIENCE ====================-->
+      <div class="qualification__content qualification__active" data-content id="work">
+        <div class="qualification__data">
+          <div>
+            <h3 class="qualification__title">Data Scientist</h3>
+            <span class="qualification__subtitle">AITIS · London, UK</span>
+            <div class="qualification__calendar">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>
+              Jan 2025 – Present
+            </div>
+          </div>
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+        </div>
+
+        <div class="qualification__data">
+          <div></div>
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+          <div>
+            <h3 class="qualification__title">Data Science Intern</h3>
+            <span class="qualification__subtitle">Office of Health Economics · London, UK</span>
+            <div class="qualification__calendar">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>
+              Jul 2024 – Oct 2024
+            </div>
+          </div>
+        </div>
+
+        <div class="qualification__data">
+          <div>
+            <h3 class="qualification__title">Acquisition &amp; Distribution Assistant Manager</h3>
+            <span class="qualification__subtitle">Danal Entertainment · South Korea</span>
+            <div class="qualification__calendar">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>
+              Apr 2019 – Oct 2022
+            </div>
+          </div>
+          <div>
+            <span class="qualification__rounder"></span>
+          </div>
+        </div>
+      </div>
+
+      <!--==================== EDUCATION ====================-->
+      <div class="qualification__content" data-content id="education">
+        <div class="qualification__data">
+          <div>
+            <h3 class="qualification__title">MSc Data Science — Distinction</h3>
+            <span class="qualification__subtitle">City St George's, University of London, UK</span>
+            <div class="qualification__calendar">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>
+              Sep 2023 – Jan 2025
+            </div>
+          </div>
+          <div>
+            <span class="qualification__rounder"></span>
+            <span class="qualification__line"></span>
+          </div>
+        </div>
+
+        <div class="qualification__data">
+          <div></div>
+          <div>
+            <span class="qualification__rounder"></span>
+          </div>
+          <div>
+            <h3 class="qualification__title">BA Economics and English Language &amp; Literature — 2:1</h3>
+            <span class="qualification__subtitle">Dongguk University, Seoul, South Korea</span>
+            <div class="qualification__calendar">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>
+              Mar 2015 – Feb 2018
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--==================== PROJECTS ====================-->
+<section class="projects section" id="projects">
+  <h2 class="section__title">Projects</h2>
+  <span class="section__subtitle">Selected work</span>
+
+  <div class="projects__container container grid">
+    <article class="projects__card">
+      <h3 class="projects__title">NoteGuard</h3>
+      <p class="projects__description">
+        A clinical text de-identification pipeline using rule-based detection, Presidio NER,
+        and patient-consistent pseudonymisation, supporting privacy-preserving use of
+        free-text clinical data. Built at a hackathon.
+      </p>
+      <div class="projects__tags">
+        <span class="projects__tag">Presidio</span>
+        <span class="projects__tag">NER</span>
+        <span class="projects__tag">Python</span>
+      </div>
+      <a href="https://github.com/yumi-h-1/Automatic-PII-preprocessing-tool" class="projects__link" target="_blank" rel="noopener">
+        View on GitHub
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </article>
+
+    <article class="projects__card">
+      <h3 class="projects__title">Inventory Placement Optimiser</h3>
+      <p class="projects__description">
+        A prototype inventory placement optimiser combining demand forecasting, multinomial
+        logistic regression and linear programming to minimise fulfilment costs under
+        warehouse capacity constraints.
+      </p>
+      <div class="projects__tags">
+        <span class="projects__tag">Forecasting</span>
+        <span class="projects__tag">Linear programming</span>
+        <span class="projects__tag">Scikit-learn</span>
+      </div>
+      <a href="https://github.com/yumi-h-1/Inventory-Placement-Optimiser" class="projects__link" target="_blank" rel="noopener">
+        View on GitHub
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </article>
+
+    <article class="projects__card">
+      <h3 class="projects__title">Automated EMA &amp; NICE Data Scraping</h3>
+      <p class="projects__description">
+        An automated Python pipeline using GPT-4o mini to extract and summarise unstructured
+        data from the European Medicines Agency, cutting data collection time from two days
+        to ten minutes.
+      </p>
+      <div class="projects__tags">
+        <span class="projects__tag">LLM</span>
+        <span class="projects__tag">Web scraping</span>
+        <span class="projects__tag">RAG</span>
+      </div>
+      <a href="https://github.com/yumi-h-1/Automated-EMA-NICE-Data-Scraping" class="projects__link" target="_blank" rel="noopener">
+        View on GitHub
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </article>
+
+    <article class="projects__card">
+      <h3 class="projects__title">Detecting Face Mask Usage</h3>
+      <p class="projects__description">
+        Multiclass classifiers detecting mask, no-mask, and improper mask use across images
+        and video, comparing SVM, MLPs, and ResNet34.
+      </p>
+      <div class="projects__tags">
+        <span class="projects__tag">Computer vision</span>
+        <span class="projects__tag">PyTorch</span>
+        <span class="projects__tag">OpenCV</span>
+      </div>
+      <a href="https://github.com/yumi-h-1/Detecting-Face-Mask-Usage-in-Images-and-a-Video" class="projects__link" target="_blank" rel="noopener">
+        View on GitHub
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </article>
+  </div>
+</section>
+
+<!--==================== CONTACT ====================-->
+<section class="contact section" id="contact">
+  <h2 class="section__title">Contact Me</h2>
+  <span class="section__subtitle">Get in touch</span>
+
+  <div class="contact__container container grid">
+    <div>
+      <div class="contact__information">
+        <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="m4 6 8 6 8-6"/></svg>
+        <div>
+          <h3 class="contact__title">Email</h3>
+          <a href="mailto:{{ site.email }}" class="contact__subtitle">{{ site.email }}</a>
+        </div>
+      </div>
+
+      <div class="contact__information">
+        <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <div>
+          <h3 class="contact__title">LinkedIn</h3>
+          <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/" class="contact__subtitle" target="_blank" rel="noopener">linkedin.com/in/{{ site.linkedin_username }}</a>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="contact__information">
+        <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-1-2.6c3-.3 6.2-1.5 6.2-6.7A5.2 5.2 0 0 0 20 5.4a4.9 4.9 0 0 0-.1-3.6s-1.1-.3-3.6 1.4a12.3 12.3 0 0 0-6.6 0C7.2 1.5 6.1 1.8 6.1 1.8A4.9 4.9 0 0 0 6 5.4a5.2 5.2 0 0 0-1.4 3.6c0 5.2 3.2 6.4 6.2 6.7a3.4 3.4 0 0 0-1 2.6V22"/></svg>
+        <div>
+          <h3 class="contact__title">GitHub</h3>
+          <a href="https://github.com/{{ site.github_username }}" class="contact__subtitle" target="_blank" rel="noopener">github.com/{{ site.github_username }}</a>
+        </div>
+      </div>
+
+      <div class="contact__information">
+        <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <div>
+          <h3 class="contact__title">Location</h3>
+          <span class="contact__subtitle">{{ site.location }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
