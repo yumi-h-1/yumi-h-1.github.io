@@ -90,6 +90,40 @@ layout: default
   </div>
 </section>
 
+<!--==================== PROJECTS ====================-->
+<section class="projects section" id="projects">
+  <h2 class="section__title">Projects</h2>
+
+  <div class="projects__marquee" id="projects-marquee">
+    <div class="projects__track">
+      {% for pass in (1..6) %}
+      {% for p in site.data.projects %}
+      <a class="projects__card" href="{{ p.url }}" target="_blank" rel="noopener"
+         {% if pass > 1 %}aria-hidden="true" tabindex="-1"{% endif %}>
+        <h3 class="projects__title">{{ p.title }}</h3>
+        <p class="projects__description">{{ p.description }}</p>
+        <div class="projects__tags">
+          {% for t in p.tags %}<span class="projects__tag">{{ t }}</span>{% endfor %}
+        </div>
+        <span class="projects__link">
+          View on GitHub
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
+      </a>
+      {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="projects__controls container">
+    <button class="projects__toggle" id="projects-toggle" aria-pressed="false" aria-controls="projects-marquee" aria-label="Pause project carousel">
+      <svg class="icon-pause" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 5v14M15 5v14"/></svg>
+      <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg>
+      <span class="projects__toggle-label">Pause</span>
+    </button>
+  </div>
+</section>
+
 <!--==================== SKILLS ====================-->
 <section class="skills section" id="skills">
   <h2 class="section__title">Skills</h2>
@@ -279,40 +313,6 @@ layout: default
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!--==================== PROJECTS ====================-->
-<section class="projects section" id="projects">
-  <h2 class="section__title">Projects</h2>
-
-  <div class="projects__marquee" id="projects-marquee">
-    <div class="projects__track">
-      {% for pass in (1..6) %}
-      {% for p in site.data.projects %}
-      <a class="projects__card" href="{{ p.url }}" target="_blank" rel="noopener"
-         {% if pass > 1 %}aria-hidden="true" tabindex="-1"{% endif %}>
-        <h3 class="projects__title">{{ p.title }}</h3>
-        <p class="projects__description">{{ p.description }}</p>
-        <div class="projects__tags">
-          {% for t in p.tags %}<span class="projects__tag">{{ t }}</span>{% endfor %}
-        </div>
-        <span class="projects__link">
-          View on GitHub
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </span>
-      </a>
-      {% endfor %}
-      {% endfor %}
-    </div>
-  </div>
-
-  <div class="projects__controls container">
-    <button class="projects__toggle" id="projects-toggle" aria-pressed="false" aria-controls="projects-marquee" aria-label="Pause project carousel">
-      <svg class="icon-pause" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 5v14M15 5v14"/></svg>
-      <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg>
-      <span class="projects__toggle-label">Pause</span>
-    </button>
   </div>
 </section>
 
