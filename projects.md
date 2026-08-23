@@ -8,7 +8,7 @@ permalink: /projects/
 
 Developed a clinical text de-identification pipeline using rule-based detection, Presidio NER, and patient-consistent pseudonymisation to support privacy-preserving use of free-text clinical data. Built at a hackathon.
 
-*Presidio · NER · Python*
+*Presidio Analyzer · PII detection · Streamlit · Python*
 
 ---
 
