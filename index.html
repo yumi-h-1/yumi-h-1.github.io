@@ -288,10 +288,10 @@ layout: default
 
   <div class="projects__marquee" id="projects-marquee">
     <div class="projects__track">
-      {% for pass in (1..2) %}
+      {% for pass in (1..6) %}
       {% for p in site.data.projects %}
       <a class="projects__card" href="{{ p.url }}" target="_blank" rel="noopener"
-         {% if pass == 2 %}aria-hidden="true" tabindex="-1"{% endif %}>
+         {% if pass > 1 %}aria-hidden="true" tabindex="-1"{% endif %}>
         <h3 class="projects__title">{{ p.title }}</h3>
         <p class="projects__description">{{ p.description }}</p>
         <div class="projects__tags">

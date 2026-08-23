@@ -39,6 +39,10 @@
 
   --z-tooltip: 10;
   --z-fixed: 100;
+
+  /*========== Projects marquee ==========*/
+  --proj-card-w: 380px;
+  --proj-gap: 1.5rem;
 }
 
 @media screen and (min-width: 968px) {
@@ -434,11 +438,13 @@ img { max-width: 100%; height: auto; }
   animation: projects-scroll 45s linear infinite;
 }
 
-/* The track holds the list twice. Each card is an exact width + margin, so
-   shifting by half the track lands precisely on the duplicate: no jump. */
+/* The track repeats the list. Shifting by exactly one set's width lands on
+   the next copy, so the loop restarts with nothing moving on screen.
+   Using px maths rather than a percentage keeps this exact no matter how
+   many copies the template renders. */
 @keyframes projects-scroll {
   from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+  to   { transform: translateX(calc(-3 * (var(--proj-card-w) + var(--proj-gap)))); }
 }
 
 .projects__marquee:hover .projects__track,
@@ -449,8 +455,8 @@ img { max-width: 100%; height: auto; }
 
 .projects__card {
   flex: 0 0 auto;
-  width: 300px;
-  margin-right: 1.5rem;
+  width: var(--proj-card-w);
+  margin-right: var(--proj-gap);
   background-color: var(--container-color);
   border: 1px solid var(--border-color);
   border-radius: 1rem;
@@ -617,6 +623,10 @@ a.contact__subtitle:hover { color: var(--first-color); }
 .page__table-wrap { overflow-x: auto; }
 
 /*==================== MEDIA QUERIES ====================*/
+@media screen and (max-width: 480px) {
+  :root { --proj-card-w: 270px; }
+}
+
 @media screen and (max-width: 350px) {
   .container { margin-left: var(--mb-1); margin-right: var(--mb-1); }
   .nav__menu { padding: 2rem 0.25rem 4rem; }
