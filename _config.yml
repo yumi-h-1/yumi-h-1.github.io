@@ -1,13 +1,16 @@
 # Site identity
 name: "yumi.h"
+og_title: "Yumi Heo — Data Scientist | Portfolio"
 nav_logo: "yumi.h"
 author: Yumi Heo
 role: "Data Scientist"
 email: yumi.heo.01@gmail.com
 location: "London, UK"
 description: >-
-  Data Scientist based in London, specialising in medical image analysis
-  and biosignal processing for healthcare and the life sciences.
+  Data Scientist in London. I build efficient, explainable models and deploy
+  them into production - medical imaging, biosignals, and LLM systems.
+
+url: "https://yumi-h-1.github.io"
 
 github_username: yumi-h-1
 linkedin_username: yumi-h
