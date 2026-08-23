@@ -118,3 +118,28 @@ if (themeButton) {
     );
   });
 }
+
+/*==================== PROJECTS MARQUEE ====================*/
+const marquee = document.getElementById("projects-marquee"),
+  marqueeToggle = document.getElementById("projects-toggle");
+
+if (marquee && marqueeToggle) {
+  const label = marqueeToggle.querySelector(".projects__toggle-label");
+
+  function setPaused(paused) {
+    marquee.classList.toggle("is-paused", paused);
+    marqueeToggle.setAttribute("aria-pressed", String(paused));
+    marqueeToggle.setAttribute(
+      "aria-label",
+      paused ? "Play project carousel" : "Pause project carousel"
+    );
+    if (label) label.textContent = paused ? "Play" : "Pause";
+  }
+
+  // Start paused when the visitor asks for reduced motion.
+  setPaused(window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+
+  marqueeToggle.addEventListener("click", () =>
+    setPaused(!marquee.classList.contains("is-paused"))
+  );
+}

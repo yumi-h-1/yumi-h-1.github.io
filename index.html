@@ -286,62 +286,33 @@ layout: default
 <section class="projects section" id="projects">
   <h2 class="section__title">Projects</h2>
 
-  <div class="projects__container container grid">
-    <article class="projects__card">
-      <h3 class="projects__title">NoteGuard</h3>
-      <p class="projects__description">
-        A clinical text de-identification pipeline using rule-based detection, Presidio NER,
-        and patient-consistent pseudonymisation, supporting privacy-preserving use of
-        free-text clinical data. Built at a hackathon.
-      </p>
-      <div class="projects__tags">
-        <span class="projects__tag">Presidio Analyzer</span>
-        <span class="projects__tag">PII detection</span>
-        <span class="projects__tag">Streamlit</span>
-        <span class="projects__tag">Python</span>
-      </div>
-      <a href="https://github.com/yumi-h-1/Automatic-PII-preprocessing-tool" class="projects__link" target="_blank" rel="noopener">
-        View on GitHub
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  <div class="projects__marquee" id="projects-marquee">
+    <div class="projects__track">
+      {% for pass in (1..2) %}
+      {% for p in site.data.projects %}
+      <a class="projects__card" href="{{ p.url }}" target="_blank" rel="noopener"
+         {% if pass == 2 %}aria-hidden="true" tabindex="-1"{% endif %}>
+        <h3 class="projects__title">{{ p.title }}</h3>
+        <p class="projects__description">{{ p.description }}</p>
+        <div class="projects__tags">
+          {% for t in p.tags %}<span class="projects__tag">{{ t }}</span>{% endfor %}
+        </div>
+        <span class="projects__link">
+          View on GitHub
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </span>
       </a>
-    </article>
+      {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
 
-    <article class="projects__card">
-      <h3 class="projects__title">Inventory Placement Optimiser</h3>
-      <p class="projects__description">
-        A prototype inventory placement optimiser combining demand forecasting, multinomial
-        logistic regression and linear programming to minimise fulfilment costs under
-        warehouse capacity constraints.
-      </p>
-      <div class="projects__tags">
-        <span class="projects__tag">Forecasting</span>
-        <span class="projects__tag">Linear programming</span>
-        <span class="projects__tag">Scikit-learn</span>
-      </div>
-      <a href="https://github.com/yumi-h-1/Inventory-Placement-Optimiser" class="projects__link" target="_blank" rel="noopener">
-        View on GitHub
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-    </article>
-
-    <article class="projects__card">
-      <h3 class="projects__title">Automated EMA &amp; NICE Data Scraping</h3>
-      <p class="projects__description">
-        An automated Python pipeline using GPT-4o mini to extract and summarise unstructured
-        data from the European Medicines Agency, cutting data collection time from two days
-        to ten minutes.
-      </p>
-      <div class="projects__tags">
-        <span class="projects__tag">LLM</span>
-        <span class="projects__tag">Web scraping</span>
-        <span class="projects__tag">RAG</span>
-      </div>
-      <a href="https://github.com/yumi-h-1/Automated-EMA-NICE-Data-Scraping" class="projects__link" target="_blank" rel="noopener">
-        View on GitHub
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-    </article>
-
+  <div class="projects__controls container">
+    <button class="projects__toggle" id="projects-toggle" aria-pressed="false" aria-controls="projects-marquee" aria-label="Pause project carousel">
+      <svg class="icon-pause" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 5v14M15 5v14"/></svg>
+      <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg>
+      <span class="projects__toggle-label">Pause</span>
+    </button>
   </div>
 </section>
 

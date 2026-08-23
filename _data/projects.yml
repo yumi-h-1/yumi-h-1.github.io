@@ -1,0 +1,23 @@
+- title: NoteGuard
+  url: https://github.com/yumi-h-1/Automatic-PII-preprocessing-tool
+  description: >-
+    A clinical text de-identification pipeline combining rule-based detection and
+    patient-consistent pseudonymisation, enabling privacy-preserving use of free-text
+    clinical data.
+  tags: [Presidio Analyzer, PII detection, Streamlit, Python]
+
+- title: Inventory Placement Optimiser
+  url: https://github.com/yumi-h-1/Inventory-Placement-Optimiser
+  description: >-
+    A prototype inventory placement optimiser combining demand forecasting, multinomial
+    logistic regression and linear programming to minimise fulfilment costs under
+    warehouse capacity constraints.
+  tags: [Forecasting, Linear programming, Scikit-learn]
+
+- title: Automated EMA & NICE Data Scraping
+  url: https://github.com/yumi-h-1/Automated-EMA-NICE-Data-Scraping
+  description: >-
+    An automated Python pipeline using GPT-4o mini to extract and summarise unstructured
+    data from the European Medicines Agency, cutting data collection time from two days
+    to ten minutes.
+  tags: [LLM, Web scraping, RAG]

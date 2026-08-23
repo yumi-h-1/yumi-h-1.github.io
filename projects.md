@@ -6,7 +6,7 @@ permalink: /projects/
 
 ### [NoteGuard](https://github.com/yumi-h-1/Automatic-PII-preprocessing-tool)
 
-Developed a clinical text de-identification pipeline using rule-based detection, Presidio NER, and patient-consistent pseudonymisation to support privacy-preserving use of free-text clinical data. Built at a hackathon.
+Built a clinical text de-identification pipeline combining rule-based detection and patient-consistent pseudonymisation, enabling privacy-preserving use of free-text clinical data.
 
 *Presidio Analyzer · PII detection · Streamlit · Python*
 
