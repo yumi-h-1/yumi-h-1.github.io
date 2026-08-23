@@ -1,7 +1,6 @@
 ---
 layout: page
 title: CV
-subtitle: Full curriculum vitae
 permalink: /cv/
 ---
 

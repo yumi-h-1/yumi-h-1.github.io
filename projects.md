@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Projects
-subtitle: Selected work in detail
 permalink: /projects/
 ---
 

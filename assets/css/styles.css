@@ -110,13 +110,11 @@ img { max-width: 100%; height: auto; }
 
 /*==================== REUSABLE ====================*/
 .section { padding: 2rem 0 4rem; }
-.section__title { font-size: var(--h1-font-size); }
-.section__subtitle {
-  display: block;
-  font-size: var(--small-font-size);
+.section__title {
+  font-size: var(--h1-font-size);
+  text-align: center;
   margin-bottom: var(--mb-3);
 }
-.section__title, .section__subtitle { text-align: center; }
 
 .container {
   max-width: 768px;
@@ -587,7 +585,7 @@ a.contact__subtitle:hover { color: var(--first-color); }
   .container { margin-left: auto; margin-right: auto; }
   body { margin: 0; }
   .section { padding: 6rem 0 2rem; }
-  .section__subtitle { margin-bottom: 4rem; }
+  .section__title { margin-bottom: 4rem; }
 
   .header { top: 0; bottom: initial; }
   .header, .main, .footer__container { padding: 0 1rem; }
