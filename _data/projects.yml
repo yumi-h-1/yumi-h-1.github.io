@@ -12,7 +12,7 @@
     A prototype inventory placement optimiser combining demand forecasting, multinomial
     logistic regression and linear programming to minimise fulfilment costs under
     warehouse capacity constraints.
-  tags: [Forecasting, Linear programming, Scikit-learn]
+  tags: [Forecasting, Linear programming, FastAPI, Docker]
 
 - title: Automated EMA & NICE Data Scraping
   url: https://github.com/yumi-h-1/Automated-EMA-NICE-Data-Scraping
@@ -20,4 +20,4 @@
     An automated Python pipeline using GPT-4o mini to extract and summarise unstructured
     data from the European Medicines Agency, cutting data collection time from two days
     to ten minutes.
-  tags: [LLM, Web scraping, RAG]
+  tags: [Generative AI Product, LLM Evaluation, Prompt Engineering, RAG, Web scraping]
