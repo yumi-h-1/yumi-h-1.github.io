@@ -313,8 +313,6 @@ img { max-width: 100%; height: auto; }
   text-align: center;
 }
 
-.about__buttons { display: flex; justify-content: center; }
-
 /*==================== SKILLS ====================*/
 .skills__container { row-gap: 0; }
 
@@ -673,7 +671,6 @@ a.contact__subtitle:hover { color: var(--first-color); }
 
   .about__description { text-align: initial; }
   .about__info { justify-content: space-between; }
-  .about__buttons { justify-content: initial; }
 
   .qualification__tabs { justify-content: center; }
   .qualification__button { margin: 0 var(--mb-1); }
