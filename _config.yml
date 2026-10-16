@@ -17,9 +17,8 @@ linkedin_username: yumi-h
 
 # Analytics (loaded on production builds only; leave empty to disable)
 analytics:
-  ga4_id: ""                # e.g. "G-XXXXXXXXXX"
-  hotjar_id: ""             # classic Hotjar Site ID, e.g. 1234567
-  contentsquare_tag_id: ""  # use instead of hotjar_id if your dashboard is app.contentsquare.com
+  ga4_id: "G-JPL30XQJ4S"          # e.g. "G-XXXXXXXXXX"
+  contentsquare_tag_id: "ee14c3949b834"  # from t.contentsquare.net/uxa/<tag_id>.js
 
 # Build
 plugins:
