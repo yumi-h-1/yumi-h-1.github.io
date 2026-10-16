@@ -143,3 +143,23 @@ if (marquee && marqueeToggle) {
     setPaused(!marquee.classList.contains("is-paused"))
   );
 }
+
+/*==================== CV DOWNLOAD TRACKING ====================*/
+// Links marked with data-cv-download="<location>" report a cv_download event
+// to GA4 and Contentsquare (both are absent on local builds, hence the guards).
+document.addEventListener("click", (event) => {
+  const link = event.target.closest("[data-cv-download]");
+  if (!link) return;
+
+  const location = link.dataset.cvDownload;
+
+  if (typeof window.gtag === "function") {
+    window.gtag("event", "cv_download", {
+      link_location: location,
+      transport_type: "beacon",
+    });
+  }
+
+  window._uxa = window._uxa || [];
+  window._uxa.push(["trackPageEvent", `cv_download_${location}`]);
+});

@@ -8,7 +8,7 @@ permalink: /cv/
 
 I build efficient, explainable models tailored to clients' requirements and successfully deploy them into production.
 
-<a href="{{ '/assets/Yumi_Heo_CV.pdf' | relative_url }}">Download CV (PDF)</a> ·
+<a href="{{ '/assets/Yumi_Heo_CV.pdf' | relative_url }}" data-cv-download="cv_page">Download CV (PDF)</a> ·
 [Email](mailto:yumi.heo.01@gmail.com) ·
 [LinkedIn](https://www.linkedin.com/in/yumi-h/) ·
 [GitHub](https://github.com/yumi-h-1)
