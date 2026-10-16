@@ -562,18 +562,17 @@ a.contact__subtitle:hover { color: var(--first-color); }
 }
 .footer__title { font-size: var(--h1-font-size); margin-bottom: var(--mb-0-25); color: #fff; }
 .footer__subtitle { font-size: var(--small-font-size); color: #fff; }
-.footer__links { display: flex; flex-direction: column; row-gap: 1.5rem; }
-.footer__link:hover { color: var(--first-color-lighter); }
 .footer__social { font-size: 1.25rem; margin-right: var(--mb-1-5); display: inline-flex; }
 .footer__social svg { width: 1.25rem; height: 1.25rem; }
 .footer__social:hover { color: var(--first-color-lighter); }
 .footer__copy {
+  grid-column: 1 / -1;
   font-size: var(--smaller-font-size);
   text-align: center;
   color: var(--text-color-light);
   margin-top: var(--mb-3);
 }
-.footer__title, .footer__subtitle, .footer__link, .footer__social { color: #fff; }
+.footer__title, .footer__subtitle, .footer__social { color: #fff; }
 
 /*==================== SCROLL UP ====================*/
 .scrollup {
@@ -676,9 +675,7 @@ a.contact__subtitle:hover { color: var(--first-color); }
   .qualification__button { margin: 0 var(--mb-1); }
   .qualification__sections { grid-template-columns: 0.5fr; }
 
-  .footer__container { grid-template-columns: repeat(3, 1fr); }
   .footer__bg { padding: 3rem 0 3.5rem; }
-  .footer__links { flex-direction: row; column-gap: 2rem; }
   .footer__socials { justify-self: flex-end; }
   .footer__copy { margin-top: 4.5rem; }
 }
