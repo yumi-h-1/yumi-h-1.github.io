@@ -15,6 +15,12 @@ url: "https://yumi-h-1.github.io"
 github_username: yumi-h-1
 linkedin_username: yumi-h
 
+# Analytics (loaded on production builds only; leave empty to disable)
+analytics:
+  ga4_id: ""                # e.g. "G-XXXXXXXXXX"
+  hotjar_id: ""             # classic Hotjar Site ID, e.g. 1234567
+  contentsquare_tag_id: ""  # use instead of hotjar_id if your dashboard is app.contentsquare.com
+
 # Build
 plugins:
   - jekyll-seo-tag
