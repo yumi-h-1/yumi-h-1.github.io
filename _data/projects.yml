@@ -1,3 +1,11 @@
+- title: TechNews Briefing
+  url: https://github.com/yumi-h-1/TechNews-briefing
+  description: >-
+    A personal IT and AI news briefing that sends a daily email digest covering the UK,
+    US and South Korea, using a LangGraph agent workflow to select stories, gather
+    evidence, and write and review summaries.
+  tags: [Agentic AI, LangGraph, OpenAI, LangSmith, SQLite, Docker]
+
 - title: NoteGuard
   url: https://github.com/yumi-h-1/Automatic-PII-preprocessing-tool
   description: >-

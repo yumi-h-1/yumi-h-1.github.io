@@ -79,7 +79,7 @@ layout: default
           <span class="about__info-name">Organisations<br>worked</span>
         </div>
         <div>
-          <span class="about__info-title">3</span>
+          <span class="about__info-title">{{ site.data.projects.size }}</span>
           <span class="about__info-name">Featured<br>projects</span>
         </div>
       </div>
@@ -92,7 +92,7 @@ layout: default
   <h2 class="section__title">Projects</h2>
 
   <div class="projects__marquee" id="projects-marquee">
-    <div class="projects__track">
+    <div class="projects__track" style="--proj-count: {{ site.data.projects.size }}">
       {% for pass in (1..6) %}
       {% for p in site.data.projects %}
       <a class="projects__card" href="{{ p.url }}" target="_blank" rel="noopener"

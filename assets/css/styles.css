@@ -436,7 +436,8 @@ img { max-width: 100%; height: auto; }
 .projects__track {
   display: flex;
   width: max-content;
-  animation: projects-scroll 45s linear infinite;
+  /* 15s per card keeps the scroll speed constant as projects are added */
+  animation: projects-scroll calc(var(--proj-count, 3) * 15s) linear infinite;
 }
 
 /* The track repeats the list. Shifting by exactly one set's width lands on
@@ -445,7 +446,7 @@ img { max-width: 100%; height: auto; }
    many copies the template renders. */
 @keyframes projects-scroll {
   from { transform: translateX(0); }
-  to   { transform: translateX(calc(-3 * (var(--proj-card-w) + var(--proj-gap)))); }
+  to   { transform: translateX(calc(-1 * var(--proj-count, 3) * (var(--proj-card-w) + var(--proj-gap)))); }
 }
 
 .projects__marquee:hover .projects__track,
